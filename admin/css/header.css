@@ -1,0 +1,63 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #1b4a0f;
+  padding: 20px;
+  position: fixed;
+  font-size: 22px;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Navigation list */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+/* Link styles */
+.sidebar ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.sidebar ul li a:hover {
+  background-color: #236b4d;
+  color: #ffffff;
+  padding-left: 30px; 
+  border-radius: 20px;
+}
+
+/* Main content styles */
+.main {
+  margin-left: 240px;
+  padding: 30px;
+}
+

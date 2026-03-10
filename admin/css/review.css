@@ -1,0 +1,93 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fa;
+      /* display: flex; */
+      height: 100vh;
+    }
+/* Main */
+    .manu {
+      margin-left: 220px;
+      padding: 30px;
+      width: 100%;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      background-color:  rgb(43, 102, 34);;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #f6f6f6;
+    }
+    header h2 {
+      font-size: 20px;
+      color :#f7f6f6;
+      margin-top: 14px;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 100px;
+      padding: 40px;
+      width: calc(100% - 240px);
+    }
+
+    .review-box {
+      background-color: #fff;
+      border-left: 5px solid #3498db;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      animation: slideFadeIn 0.6s ease forwards;
+      transform: translateY(200px);
+    }
+
+    .review-box:nth-child(even) {
+      border-left-color: #2ecc71;
+    }
+
+    .field {
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .value {
+      color: #333;
+      margin-top: 4px;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+    }
